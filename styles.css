@@ -50,6 +50,12 @@ nav {
   list-style: none;
 }
 
+#right svg{
+    height: 26px;
+    width: 26px;
+    display: none;
+}
+
 #page1,
 #page2,
 #page3 {
@@ -60,4 +66,15 @@ nav {
   align-items: center;
   text-align: center;
   background-color: antiquewhite;
+  padding: 0 30px;
+}
+
+
+@media screen and (max-width: 600px)     {
+   #right ul{
+    display: none;
+   }
+    #right svg{
+        display: block;
+    }
 }
