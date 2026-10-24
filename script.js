@@ -19,5 +19,22 @@ window.addEventListener("scroll", ()=>{
     }
 
     lastScrollY = currentScrollY;
+})
 
+
+// For the nav items
+const timelineForNav = gsap.timeline();
+
+timelineForNav.from("#left", {
+    y: 10,
+    duration: 0.5,
+    delay: 0.3,
+    opacity: 0
+})
+
+timelineForNav.from("#right ul li", {
+    y: 10,
+    duration: 0.5,
+    opacity: 0,
+    stagger: 0.1
 })
