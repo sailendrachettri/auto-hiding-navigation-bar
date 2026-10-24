@@ -26,6 +26,18 @@ nav {
   z-index: 1000;
 }
 
+#left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px
+}
+
+#left svg{
+    height: 16px;
+    width: 16px;
+}
+
 #right ul {
   display: flex;
   align-items: center;
