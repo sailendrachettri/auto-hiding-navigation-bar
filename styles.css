@@ -14,7 +14,7 @@ nav {
   display: flex;
   justify-items: center;
   justify-content: space-between;
-  background-color: rgb(23, 25, 24);
+  background-color: #171918;
   display: flex;
   align-items: center;
   padding: 3px 10px;
@@ -69,6 +69,28 @@ nav {
   padding: 0 30px;
 }
 
+#menubar{
+    background-color: #171918;
+    color: white;
+    font-size: small;
+    padding: 0 20px;
+    position: fixed;
+    right: -500px;
+    top: 32px;
+    height: 100%;
+    width: 50%;
+    z-index: 9900;
+}
+
+#menubar ul{
+    margin-top: 10px;
+}
+
+#menubar ul li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+
 
 @media screen and (max-width: 600px)     {
    #right ul{
@@ -76,5 +98,11 @@ nav {
    }
     #right svg{
         display: block;
+    }
+}
+
+@media screen and (min-width: 600px) {
+     #menubar{
+        display: none;
     }
 }

@@ -1,4 +1,6 @@
 let lastScrollY = window.scrollY;
+let hamburgerMenu = document.querySelector("#right svg");
+let isMenuHidden = true;
 
 window.addEventListener("scroll", ()=>{
     const currentScrollY = window.scrollY;
@@ -37,4 +39,14 @@ timelineForNav.from("#right ul li", {
     duration: 0.5,
     opacity: 0,
     stagger: 0.1
+})
+
+// For the mobile menu
+hamburgerMenu.addEventListener("click", ()=>{
+    isMenuHidden = false;
+    
+    gsap.to("#menubar", {
+        x: -500,
+        duration: 1
+    })
 })
