@@ -1,44 +1,51 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-html, body{
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
-nav{
-    display: flex;
-    justify-items: center;
-    justify-content: space-between;
-    background-color: aquamarine;
-    display: flex;
-    align-items: center;
-    padding: 3px 10px;
-}
-
-#left{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#right ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 8px;
-    gap: 5px;
+nav {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  background-color: rgb(23, 25, 24);
+  display: flex;
+  align-items: center;
+  padding: 3px 10px;
+  position: fixed;
+  color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-#right ul li{
-    list-style: none;
+#right ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  gap: 5px;
 }
 
-#page1, #page2, #page3{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#right ul li {
+  list-style: none;
+}
+
+#page1,
+#page2,
+#page3 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: antiquewhite;
 }

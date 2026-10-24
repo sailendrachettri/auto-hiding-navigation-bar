@@ -1,29 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>auto hiding scroll nav bar</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <nav>
-        <div id="left">Infinite</div>
-        <div id="right">
-            <ul>
-                <li>Blog</li>
-                <li>About</li>
-                <li>Contact</li>
-                <li>Services</li>
-            </ul>
-        </div>
+      <div id="left">Infinite</div>
+      <div id="right">
+        <ul>
+          <li>Blog</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Services</li>
+        </ul>
+      </div>
     </nav>
-    
-    <div id="page1">Page 1</div>
-    <div id="page2">Page 2</div>
-    <div id="page3">Page 3</div>
-    
+
+    <div id="page1">
+      <small>
+        A smart navigation bar that automatically hides when the user scrolls
+        down and reappears when they scroll up, providing a cleaner browsing
+        experience while keeping navigation easily accessible.</small
+      >
+    </div>
+    <div id="page2">
+      <small
+        >Maximizes available screen space while scrolling down and provides
+        quick access to navigation links when scrolling up.</small
+      >
+    </div>
+    <div id="page3">
+      <small>
+        Dynamically adjusts the navbar's visibility based on the user's scroll
+        direction, ensuring consistent behavior throughout the webpage.</small
+      >
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js"
+      integrity="sha512-oJ8QbaQThQoJZ7oEv+29jfPM6CcP+zUxh3PKJs1vyOhx0UraUrE7PQgeItu3dOuCJyrzWpoYMsVjkkPEBzbUqw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js"
+      integrity="sha512-OaIE7ud4P04EhnBuhEcm0wQSceIxbi2pV03oBLS/+F6ampfxsnxcIxOp7H2eF9G7N0kEht0VAzOLG+dTLSo17Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
